@@ -6,6 +6,9 @@ d = {
 }
 number = input("Give me a number: ")
 msg = ""
-for i in number:
-    msg += d[i]+" "
+msg2 = ""
+for ch in number:
+    msg += d.get(ch,"-") +" "
+    msg2 += d.get(ch,ch) + " "
 print(msg)
+print(msg2)
